@@ -16,5 +16,5 @@ def __shadowenv_post_rc() -> None:
     __shadowenv()
 
 @events.on_chdir
-def __shadowenv_on_chdir(olddir: str, newddir: str) -> None:
+def __shadowenv_on_chdir(olddir: str, newdir: str) -> None:
     __shadowenv()

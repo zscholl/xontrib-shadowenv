@@ -33,10 +33,6 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install ".[dev]"
-        python -m pip install .
     - name: Run tests
       run: |
-        python -m xonsh -c "xontrib list"
-        python -m xonsh -c "xontrib load shadowenv"
-        python -m xonsh -c "xontrib list"
         python -m pytest .

@@ -31,8 +31,10 @@ jobs:
         cache-dependency-path: "pyproject.toml"
 
     - name: Install dependencies
-      run: pip install ".[dev]"
+      run: |
+        pip install ".[dev]"
+        pip install .
     - name: Run tests
       run: |
         xonsh -c "xontrib load shadowenv"
-        pytest
+        python -m pytest .

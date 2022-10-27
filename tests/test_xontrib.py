@@ -1,6 +1,6 @@
 from unittest import TestCase
+
 from xonsh.xontribs import xontribs_load, xontribs_loaded
-from xonsh.events import events
 
 
 class TestLoading(TestCase):

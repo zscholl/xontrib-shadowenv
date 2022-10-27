@@ -36,5 +36,5 @@ jobs:
         pip install .
     - name: Run tests
       run: |
-        xonsh -c "xontrib load shadowenv"
+        xonsh -c "xpip install . && xontrib load shadowenv"
         python -m pytest .
